@@ -4,7 +4,7 @@
   font-family:sans-serif;
 }
 header{
-  background-image: url(../3.jpg);
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../3.jpg);
   height:100vh;
   background-size: auto;
   background-position: center;
@@ -12,8 +12,44 @@ header{
 ul{
   float: right;
   list-style-type: none;
+  margin-top: 25px;
 
 }
 ul li{
   display: inline-block;
+}
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+}
+
+ul li a:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+ul li.active a{
+  background-color: #000;
+  color: #fff;
+}
+
+.logo img{
+  float: left;
+  width: 150px;
+  height: auto;
+
+}
+.title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.title h1{
+  color: #fff;
+  font-size: 70px;
 }
