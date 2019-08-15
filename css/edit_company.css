@@ -1,0 +1,10 @@
+table{
+  color: #fff;
+}
+.actions i:hover, .actions i:active{
+  background: #73C6B6;
+  color: #fff;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+}
